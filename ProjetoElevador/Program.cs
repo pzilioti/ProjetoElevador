@@ -1,5 +1,6 @@
 ﻿using ProjetoElevador.Model;
 using System;
+using System.Threading;
 
 namespace ProjetoElevador {
     internal class Program {
@@ -18,6 +19,10 @@ namespace ProjetoElevador {
 
             //inicializa o elevador
             elevador.Inicializar(totalAndares, capacidade);
+
+            Console.WriteLine();
+            Console.WriteLine("Inicializando elevador...");
+            Thread.Sleep(1500); //pra dar uma experiencia melhor pro simulador
 
 
             while (true) {
